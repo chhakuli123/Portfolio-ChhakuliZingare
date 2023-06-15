@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 4rem;
+}
+.center {
+  text-align: center;
+}
+.social-links {
+  max-width: 19rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 0.2rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--bgTernary);
+}
+.social:hover {
+  background-color: var(--primaryEmerald);
+  color: var(--bgPrimary);
+}

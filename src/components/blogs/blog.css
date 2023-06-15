@@ -1,0 +1,37 @@
+.blogs {
+  margin-top: 2rem;
+}
+
+.blog {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  min-height: 18rem;
+  max-height: 14rem;
+}
+.reads {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.blog-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  min-height: 9rem;
+  max-height: 9rem;
+  object-fit: cover;
+}
+.blogs-clock {
+  margin-right: 0.3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .projects-container {
+    flex-direction: column;
+    padding: 0rem 2rem;
+  }
+  .blog-img {
+    background-size: cover;
+  }
+}

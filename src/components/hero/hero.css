@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap");
+.hero {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 26rem;
+  margin-bottom: 5rem;
+}
+.myname {
+  background-color: var(--primaryPurple);
+  font-family: "Spartan", sans-serif;
+  padding: 0 0.7rem;
+  background: -webkit-linear-gradient(
+    var(--primaryEmerald),
+    var(--primaryPurple)
+  );
+  background-clip: text;
+  font-weight: x-bold;
+  -webkit-text-fill-color: transparent;
+}
+.info {
+  line-height: 1.2;
+  position: relative;
+  animation: slide-in-left 2s both;
+}
+.hey {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primaryEmerald);
+}
+.hero-img {
+  min-height: 14rem;
+  min-width: 14rem;
+  max-height: 14rem;
+  max-width: 14rem;
+  animation: slide-top 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite
+    alternate-reverse backwards;
+}
+.sec-text {
+  color: var(--textSecondary);
+}
+.connect-btn {
+  display: block;
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  border-color: var(--primaryEmerald);
+  background: transparent;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    left: -50rem;
+  }
+
+  100% {
+    left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    flex-direction: column-reverse;
+    min-height: 18rem;
+  }
+  .hero-img {
+    min-height: 9rem;
+    max-height: 9rem;
+    min-width: 9rem;
+    max-width: 9rem;
+  }
+  .info {
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}

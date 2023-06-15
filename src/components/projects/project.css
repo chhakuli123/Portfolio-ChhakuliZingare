@@ -1,0 +1,81 @@
+.projects {
+  margin-top: 2rem;
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgSecondary);
+  border-radius: 1rem;
+  min-width: 30%;
+  max-width: 30%;
+  min-height: 16.5rem;
+  margin: 1rem 0.5rem;
+}
+
+.card-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  min-height: 9rem;
+  max-height: 9rem;
+  object-fit: cover;
+  filter: brightness(0.7) saturate(100%) contrast(150%) hue-rotate(20deg);
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.card-btn {
+  padding: 0.3rem;
+  border: none;
+  color: inherit;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--bgTernary);
+  margin: 0 0.3rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-svg {
+  width: 2rem;
+  height: 2rem;
+}
+.card-info {
+  padding: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.app-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.app-intro {
+  color: var(--textSecondary);
+  font-size: 0.8rem;
+}
+.card-btn:hover {
+  background-color: var(--primaryEmerald);
+  color: var(--bgPrimary);
+}
+
+@media screen and (max-width: 767px) {
+  .project-card {
+    min-width: 70vw;
+    max-width: 70vw;
+  }
+  .card-img {
+    object-fit: cover;
+  }
+}

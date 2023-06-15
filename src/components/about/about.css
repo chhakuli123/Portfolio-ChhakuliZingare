@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.about-img {
+  max-width: 20rem;
+}
+.about-info {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 100;
+  line-height: 1.5;
+  max-width: 22rem;
+}
+.faint-heading {
+  font-size: 4rem;
+  color: var(--borderColor);
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    flex-direction: column-reverse;
+    margin-top: 0.5rem;
+  }
+  .about-img {
+    max-width: 70vw;
+  }
+  .about-info {
+    padding-top: 1rem;
+  }
+  .faint-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
