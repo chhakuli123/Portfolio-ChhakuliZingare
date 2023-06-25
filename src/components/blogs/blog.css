@@ -27,10 +27,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .projects-container {
-    flex-direction: column;
-    padding: 0rem 2rem;
-  }
   .blog-img {
     background-size: cover;
   }
