@@ -19,6 +19,16 @@ export const projectsData = [
     github: "https://github.com/chhakuli123/SocialBuzz",
     live: "https://social-buzz-app.netlify.app/",
   },
+  {
+    id: 3,
+    name: "WatchTrove",
+    imgUrl:
+      "https://res.cloudinary.com/dptfwcnro/image/upload/v1687698479/Portfolio/xm6o3ugelgwilt7evdex.png",
+    info:
+      "Social Buzz is a compact social media app designed for connecting and engaging with others.",
+    github: "https://github.com/chhakuli123/WatchTrove",
+    live: "https://watch-trove.netlify.app/",
+  },
 ];
 
 export const blogsData = [
